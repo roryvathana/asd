@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background: linear-gradient(rgb(117, 7, 117),rgb(14, 40, 237));
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        form{
+            padding: 50px;
+			background-color: white;
+            background-attachment: fixed;
+            margin: 50PX;
+			border-radius: 5px;
+        }
+        .contain{
+            gap: 20px;
+            display: flex;
+        }
+        .item{
+
+            line-height: 1.5;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 15px;
+        }
+        .item input{
+            border: 1px solid;
+            width: 380px;
+            height: 30px;
+            padding: 20px;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+        button{
+            border: 1px solid;
+            width: 250px;
+            height: 45px;
+            margin: 40px;
+            color: aliceblue;
+            background:linear-gradient(rgb(236, 118, 236),rgb(119, 21, 224));
+        }
+    </style>
+</head>
+<body>
+    <form style="background-color: white;">
+        <h1> Registration</h1>
+        <legend style="font-size: 20px;"> Personal Details</legend>
+        <div class="contain">
+            <div class="item">
+                <label for="fullname"> Full Name</label><br>
+                <input type="text" id="name" name="name" placeholder="Enter your name">
+            </div>
+            <div class="item">
+                <label for="date">Date of birth</label><br>
+                <input type="date" id="date" name="date">
+            </div>
+            <div class="item">
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+            </div>
+        </div>
+        <div class="contain">
+            <div class="item">
+                <label for="phone">Mobile Number</label><br>
+                <input type="number" id="phone" name="moble number" placeholder="Enter moble phone">
+            </div>
+            <div class="item">
+                <label for="gender">Gender</label><br>
+                <input list="a" placeholder="Select gender">
+                <datalist id="a">
+                    <select placeholder="select gender">
+                        <option value="Male"> Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </datalist>
+            </div>
+            <div class="item">
+                <label for="job">Occupation</label><br>
+                <input type="text" id="job" name="job" placeholder="Enter your occupation">
+            </div>
+        </div>
+
+
+        <legend style="font-size: 20px;">Identity Detail</legend>
+        <div class="contain">
+            <div class="item">
+                <label for="ID">ID Type</label><br>
+                	<input type="text" id="ID" name="id" placeholder="Enter ID type">
+            </div>
+            <div class="item">
+                <label for="ID Number">ID Number</label>
+				<br>
+                	<input type="text" id="ID Number" name="id number" placeholder="Enter ID Number">
+				</br>
+			</div>
+            <div class="item">
+                <label for="authority">ID Type</label><br>
+				<input type="text" id="authority" name="authority" placeholder="Enter issued authority">
+            </div>
+        </div>
+        <div class="contain">
+            <div class="item">
+                <label for="state">ID Type</label><br>
+                <input type="text" id="state" name="state" placeholder="Enter issued state">
+            </div>
+            <div class="item">
+                <label for="issued date">Issued Date</label><br>
+                <input type="date" id=" issued date" name="issued date">
+            </div>
+            <div class="item">
+                <label for="Expiry Date">Expiry Date</label><br>
+                <input type="date" id="Expiry Date" name="Expiry Date">
+            </div>
+        </div>
+        <button class="next"> Next</button>
+
+        
+
+
+    </form>
+</body>
+</html>
